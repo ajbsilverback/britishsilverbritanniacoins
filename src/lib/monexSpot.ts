@@ -10,7 +10,7 @@ import { SITE_CONFIG, getProductApiUrl, getSpotApiUrl } from "./siteConfig";
  * 
  * API Response shape (data[0]):
  * {
- *   "symbol": "SAEV",
+ *   "symbol": "BSB",
  *   "baseCurrency": "USD",
  *   "last": 35.00,
  *   "bid": 34.80,
@@ -40,7 +40,8 @@ export interface ProductSpotSummary {
 
 /**
  * Fetches the current product spot price from Monex API
- * Uses symbol from SITE_CONFIG.productSymbol (SAEV = Silver American Eagle)
+ * Uses symbol from SITE_CONFIG.productSymbol
+ * (coin-specific symbol configured per site, e.g. BSB for Silver Britannia)
  * 
  * Uses cache: 'no-store' to ensure:
  * - Data is fetched fresh on each page load ONLY
@@ -81,7 +82,7 @@ export async function fetchProductSpot(): Promise<ProductSpotSummary | null> {
     } else if (json && typeof json === "object") {
       // Response is an object
       if (json[symbol]) {
-        // Keyed by symbol: { SAEV: { ... } }
+        // Keyed by symbol: { BSB: { ... } }
         productData = json[symbol];
       } else if (json.data && Array.isArray(json.data)) {
         // Wrapped in data property: { data: [...] }
