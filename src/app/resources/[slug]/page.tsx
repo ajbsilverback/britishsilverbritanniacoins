@@ -81,11 +81,11 @@ function generateAISummaryBullets(slug: string, title: string): string[] {
       "Compare total cost of ownership for different silver coin options",
     ],
     "coin-comparison": [
-      "This article compares Silver Eagle, Maple Leaf, and Britannia coins",
-      "Learn the key differences: .999 purity vs .9999 (Maple Leaf)",
-      "Understand that all 1 oz coins contain exactly 1 oz of silver",
-      "Discover which coin best fits different investment goals",
-      "Get guidance on IRA eligibility for each coin type",
+      "This article compares Silver Britannias with other major government-minted coins",
+      "Learn how Britannia's .999 purity compares to other standards",
+      "Understand that all major 1 oz coins contain exactly 1 oz of silver",
+      "Discover why Britannias' security features set them apart",
+      "Get guidance on IRA eligibility for Britannias and other options",
     ],
     "storage-options": [
       "This article covers storage solutions for silver coins",

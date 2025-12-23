@@ -3,24 +3,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "About Silver Bullion Coins | Independent Educational Resource",
+  title: "About British Silver Britannia Coins | Independent Educational Resource",
   description:
-    "Silver Bullion Coins is an independent educational resource about silver bullion coins. We do not sell precious metals, provide financial advice, or endorse any dealers.",
+    "British Silver Britannia Coins is an independent educational resource about Silver Britannia coins from the Royal Mint. Learn about .999 fine purity, security features, and IRA eligibility. We do not sell precious metals or provide financial advice.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/about`,
   },
   openGraph: {
-    title: "About Silver Bullion Coins | Independent Educational Resource",
+    title: "About British Silver Britannia Coins | Independent Educational Resource",
     description:
-      "Independent educational resource about silver bullion coins. We do not sell precious metals or provide financial advice.",
+      "Independent educational resource about Silver Britannia coins from the Royal Mint. We do not sell precious metals or provide financial advice.",
     url: `${SITE_CONFIG.domain}/about`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "About Silver Bullion Coins | Independent Educational Resource",
+    title: "About British Silver Britannia Coins | Independent Educational Resource",
     description:
-      "Independent educational resource about silver bullion coins. We do not sell precious metals or provide financial advice.",
+      "Independent educational resource about Silver Britannia coins from the Royal Mint. We do not sell precious metals or provide financial advice.",
   },
 };
 
@@ -28,9 +28,9 @@ export default function AboutPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About Silver Bullion Coins",
+    name: "About British Silver Britannia Coins",
     description:
-      "Learn about Silver Bullion Coins, an independent educational resource about silver bullion coins.",
+      "Learn about British Silver Britannia Coins, an independent educational resource about Silver Britannia coins from the Royal Mint.",
     url: `${SITE_CONFIG.domain}/about`,
     publisher: {
       "@type": "Organization",
@@ -54,7 +54,7 @@ export default function AboutPage() {
               About <span className="accent-text">{SITE_CONFIG.brandName}</span>
             </h1>
             <p className="text-xl text-slate-600">
-              An independent educational resource for silver coin investors
+              An independent educational resource for Silver Britannia investors
             </p>
           </div>
 
@@ -68,14 +68,17 @@ export default function AboutPage() {
               <p className="text-slate-600 leading-relaxed mb-4">
                 {SITE_CONFIG.brandName} is an independent educational website
                 dedicated to helping investors understand{" "}
-                {SITE_CONFIG.primaryProduct}, including government-minted coins 
-                with .999 fine purity.
+                {SITE_CONFIG.primaryProduct} from the Royal Mint. These 
+                government-minted coins feature .999 fine silver purity, the iconic 
+                Britannia motif, and industry-leading security features that make 
+                them among the most secure silver bullion coins available.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Our mission is to provide clear, unbiased information about 
-                silver coin investing, including pricing mechanics, purity 
-                standards, IRA eligibility, and how different silver coins compare 
-                to each other.
+                Silver Britannia investing, including the Royal Mint&apos;s heritage, 
+                pricing mechanics and premiums, advanced anti-counterfeiting technology, 
+                IRA eligibility, global liquidity, and how Britannias compare 
+                to other major government-minted silver coins.
               </p>
             </section>
 
@@ -90,14 +93,14 @@ export default function AboutPage() {
                   <span className="text-red-500 mt-1">✕</span>
                   <span>
                     <strong className="text-slate-900">Not a dealer:</strong> We do
-                    not sell silver coins, bars, or any precious metals.
+                    not sell Silver Britannias, bars, or any precious metals.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">✕</span>
                   <span>
                     <strong className="text-slate-900">Not affiliated:</strong> We
-                    have no financial relationship with Monex, any government mint, or 
+                    have no financial relationship with Monex, the Royal Mint, or 
                     any of the dealers mentioned on our site.
                   </span>
                 </li>
@@ -136,8 +139,8 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
                   <span>
-                    <strong className="text-slate-900">Silver coin price</strong> (current
-                    ask price for silver bullion coins)
+                    <strong className="text-slate-900">Silver Britannia price</strong> (current
+                    ask price for British Silver Britannia coins)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -197,35 +200,44 @@ export default function AboutPage() {
               </ul>
             </section>
 
-            {/* About Silver Bullion Coins */}
+            {/* About Silver Britannia */}
             <section className="card p-6 md:p-8 bg-slate-50 border-slate-200">
               <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-                About Silver Bullion Coins
+                About the Silver Britannia
               </h2>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Silver bullion coins are government-minted coins containing a specific 
-                weight of .999 fine silver. Popular examples include:
+                The British Silver Britannia is a government-minted bullion coin produced 
+                by the Royal Mint at their facility in Llantrisant, Wales. First minted in 1997, 
+                the coin features the iconic Britannia motif and these key specifications:
               </p>
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
-                  <span><strong className="text-slate-900">American Silver Eagle</strong> (U.S. Mint)</span>
+                  <span><strong className="text-slate-900">.999 fine silver</strong> purity (upgraded from .958 in 2013)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
-                  <span><strong className="text-slate-900">Canadian Silver Maple Leaf</strong> (Royal Canadian Mint)</span>
+                  <span><strong className="text-slate-900">1 troy ounce</strong> of pure silver content (31.1035g)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
-                  <span><strong className="text-slate-900">British Silver Britannia</strong> (Royal Mint)</span>
+                  <span><strong className="text-slate-900">£2 face value</strong> (British legal tender)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
-                  <span><strong className="text-slate-900">1 troy ounce</strong> of silver content</span>
+                  <span><strong className="text-slate-900">Royal Mint security</strong>: surface animation, micro-text, radial sunburst, latent image</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">•</span>
-                  <span><strong className="text-slate-900">IRA eligible</strong> for Precious Metals IRAs</span>
+                  <span><strong className="text-slate-900">Obverse</strong>: monarch portrait (King Charles III from 2023; Queen Elizabeth II 1997-2022)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-slate-500">•</span>
+                  <span><strong className="text-slate-900">Reverse</strong>: Britannia with trident, shield, and Corinthian helmet</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-slate-500">•</span>
+                  <span><strong className="text-slate-900">IRA eligible</strong> for tax-advantaged Precious Metals IRAs</span>
                 </li>
               </ul>
             </section>
@@ -273,7 +285,7 @@ export default function AboutPage() {
                 Return Home
               </Link>
               <Link href="/live-silver-prices" className="btn-secondary">
-                View Silver Prices
+                View Britannia Prices
               </Link>
               <Link href="/resources" className="btn-secondary">
                 Browse Resources

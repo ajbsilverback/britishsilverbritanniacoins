@@ -4,24 +4,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Silver Coin Design & History | Iconic Government Mint Designs",
+  title: "Silver Britannia Design & History | The Britannia Motif & Royal Mint Heritage",
   description:
-    "Explore the history and design of silver bullion coins from government mints worldwide. Learn about iconic designs, artistic heritage, and what coin design signals to investors.",
+    "Explore the history and design of British Silver Britannia coins. Learn about the iconic Britannia motif featuring trident and shield, the Royal Mint's 1,100+ year heritage, and the coin's evolution from 1997 to present.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/design-history`,
   },
   openGraph: {
-    title: "Silver Coin Design & History | Iconic Government Mint Designs",
+    title: "Silver Britannia Design & History | The Britannia Motif & Royal Mint Heritage",
     description:
-      "The story behind iconic silver coin designs from government mints worldwide and what they mean for modern silver investors.",
+      "The story behind the iconic Britannia motif and Royal Mint heritage. Over 2,000 years of design history behind Britain's flagship silver bullion coin.",
     url: `${SITE_CONFIG.domain}/design-history`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Silver Coin Design & History",
+    title: "Silver Britannia Design & History",
     description:
-      "Explore the history and design of silver bullion coins from government mints worldwide.",
+      "Explore the Britannia motif and Royal Mint heritage behind British Silver Britannia coins, from Roman origins to modern bullion.",
   },
 };
 
@@ -29,9 +29,9 @@ export default function DesignHistoryPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Silver Coin Design & History",
+    name: "Silver Britannia Design & History",
     description:
-      "The history and design origins of silver bullion coins from government mints worldwide.",
+      "The history and design origins of British Silver Britannia coins from the Royal Mint.",
     url: `${SITE_CONFIG.domain}/design-history`,
     publisher: {
       "@type": "Organization",
@@ -55,20 +55,20 @@ export default function DesignHistoryPage() {
               Design <span className="accent-text">&amp; History</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              The story behind iconic silver coin designs from government mints worldwide, from classical artistry to modern bullion programs.
+              The story behind the iconic Britannia design, from ancient Roman origins to the modern Royal Mint bullion coin.
             </p>
           </div>
 
           {/* Introduction Section */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              The Art of Silver Coinage
+              The Britannia Legacy
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Silver coins have been a medium of artistic expression and store of value for thousands of years. Modern silver bullion coins from government mints combine centuries of numismatic tradition with investment-grade quality.
+              Britannia, the female personification of Britain, has appeared on British coinage for centuries. Depicted with her iconic symbols—a trident representing naval power, a shield bearing the Union Flag, and a Corinthian helmet—this powerful figure represents the strength, resilience, and maritime heritage of the British Isles.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Each major silver coin program features distinctive designs that reflect national identity, artistic heritage, and the values of the issuing nation. These designs contribute to the coins&apos; recognition, authenticity, and liquidity in global markets.
+              The modern Silver Britannia bullion coin, first minted in 1997, continues this proud tradition. Produced by the Royal Mint—one of the world&apos;s oldest minting institutions with continuous operation since c. 886 AD—the Silver Britannia combines classical artistry with contemporary bullion standards, advanced security features, and strong global liquidity.
             </p>
           </section>
 
@@ -78,38 +78,39 @@ export default function DesignHistoryPage() {
               {/* Text Column */}
               <div className="md:col-span-7 order-2 md:order-1">
                 <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-                  Obverse: National Symbols & Heritage
+                  Obverse: The Monarch&apos;s Portrait
                 </h2>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  The obverse (front) of silver bullion coins typically features imagery that represents the issuing nation. Common themes include:
+                  The obverse of the Silver Britannia features an official portrait of the reigning British monarch, following the longstanding tradition of British coinage that provides authenticity and continuity.
                 </p>
                 <ul className="space-y-3 text-slate-600 mb-4">
                   <li className="flex items-start gap-3">
                     <span className="text-slate-500">•</span>
-                    <span><strong className="text-slate-900">National symbols</strong>: Liberty, monarchs, or emblems representing the country of origin</span>
+                    <span><strong className="text-slate-900">2023–present</strong>: King Charles III portrait by Martin Jennings</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-slate-500">•</span>
-                    <span><strong className="text-slate-900">Historical figures</strong>: Iconic representations from the nation&apos;s history</span>
+                    <span><strong className="text-slate-900">1997–2022</strong>: Queen Elizabeth II portrait (various designs over her reign)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-slate-500">•</span>
-                    <span><strong className="text-slate-900">Artistic interpretations</strong>: Classic designs that have stood the test of time</span>
+                    <span><strong className="text-slate-900">Inscriptions</strong>: Monarch&apos;s name, year of issue, and £2 denomination</span>
                   </li>
                 </ul>
                 <p className="text-slate-600 leading-relaxed">
-                  These designs serve dual purposes: establishing authenticity through government authority and creating collector appeal through artistic merit.
+                  The change of monarch creates natural collectibility, with many investors and collectors acquiring examples from both the Elizabeth II and Charles III eras.
                 </p>
               </div>
               {/* Image Column */}
               <div className="md:col-span-5 flex justify-center items-center order-1 md:order-2">
-                <div className="relative w-full max-w-[320px] aspect-square flex items-center justify-center">
+                <div className="relative w-full max-w-[280px] md:max-w-[320px] aspect-square mx-auto">
                   <Image
-                    src="/silver-american-eagle-obverse.png"
-                    alt="Silver coin obverse design example"
+                    src="/british-britannia-silver-coins-obverse.png"
+                    alt="British Silver Britannia obverse showing monarch portrait"
                     fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
+                    className="object-contain drop-shadow-lg"
+                    sizes="(max-width: 768px) 280px, 320px"
+                    priority
                   />
                 </div>
               </div>
@@ -121,112 +122,113 @@ export default function DesignHistoryPage() {
             <div className="grid md:grid-cols-12 gap-8 items-center">
               {/* Image Column */}
               <div className="md:col-span-5 flex justify-center items-center">
-                <div className="relative w-full max-w-[320px] aspect-square flex items-center justify-center">
+                <div className="relative w-full max-w-[280px] md:max-w-[320px] aspect-square mx-auto">
                   <Image
-                    src="/silver-american-eagle-reverse.png"
-                    alt="Silver coin reverse design example"
+                    src="/british-britannia-silver-coins-reverse.png"
+                    alt="British Silver Britannia reverse showing Britannia figure with trident and shield"
                     fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
+                    className="object-contain drop-shadow-lg"
+                    sizes="(max-width: 768px) 280px, 320px"
+                    priority
                   />
                 </div>
               </div>
               {/* Text Column */}
               <div className="md:col-span-7">
                 <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-                  Reverse: National Identity & Specifications
+                  Reverse: The Britannia Motif
                 </h2>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  The reverse (back) of silver coins typically displays national emblems, wildlife, or symbolic imagery that reinforces the coin&apos;s origin and authenticity.
+                  The reverse showcases the iconic figure of Britannia, the female personification of Britain. This powerful symbol has represented British strength, resilience, and maritime heritage for over 2,000 years, dating back to Roman-era coinage.
                 </p>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  Key information inscribed on the reverse includes the country of origin, denomination, weight, and purity specifications. This standardized information allows for immediate verification and supports global liquidity.
+                  <strong className="text-slate-900">Iconic elements:</strong> Britannia is depicted with her defining symbols—a Corinthian helmet representing classical wisdom, a trident symbolizing naval power and dominion of the seas, and a shield bearing the Union Flag. She stands against the waves, representing Britain&apos;s island heritage.
                 </p>
                 <p className="text-slate-600 leading-relaxed">
-                  Modern security features may also be incorporated into reverse designs, including micro-engraving and other anti-counterfeiting measures.
+                  <strong className="text-slate-900">Designer:</strong> The modern Britannia design was created by sculptor Philip Nathan and introduced with the bullion series. The design has been refined over the years while maintaining its classical elegance, and since 2021 incorporates advanced security features.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Major Silver Coin Programs */}
+          {/* Historical Origins */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              Major Silver Coin Programs
+              Historical Origins of Britannia
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Government mints around the world produce silver bullion coins with distinctive designs and specifications:
+              The figure of Britannia has deep historical roots in British culture:
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">American Silver Eagle</h3>
+                <h3 className="text-slate-800 font-semibold mb-2">Roman Origins</h3>
                 <p className="text-slate-500 text-sm">
-                  Featuring Walking Liberty on the obverse and a heraldic eagle on the reverse. First minted in 1986 by the U.S. Mint.
+                  The Romans first used Britannia as a personification of the British Isles on coins during the reign of Emperor Hadrian (AD 119).
                 </p>
               </div>
               <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">Canadian Maple Leaf</h3>
+                <h3 className="text-slate-800 font-semibold mb-2">Return to British Coinage</h3>
                 <p className="text-slate-500 text-sm">
-                  The iconic maple leaf design with .9999 fine purity. Produced by the Royal Canadian Mint since 1988.
+                  Britannia reappeared on British coinage in 1672 during the reign of Charles II, beginning a tradition that continues today.
                 </p>
               </div>
               <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">British Britannia</h3>
+                <h3 className="text-slate-800 font-semibold mb-2">Symbol of Maritime Power</h3>
                 <p className="text-slate-500 text-sm">
-                  Features the classical figure of Britannia. Produced by the Royal Mint with advanced security features.
+                  The trident represents Britain&apos;s naval dominance, while the shield and helmet symbolize strength and protection.
                 </p>
               </div>
               <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">Austrian Philharmonic</h3>
+                <h3 className="text-slate-800 font-semibold mb-2">Modern Bullion Era</h3>
                 <p className="text-slate-500 text-sm">
-                  Musical instruments of the Vienna Philharmonic Orchestra. Minted by the Austrian Mint.
+                  The Silver Britannia bullion coin launched in 1997, joining the Gold Britannia (1987) as flagship Royal Mint products.
                 </p>
               </div>
             </div>
             <p className="text-slate-500 text-sm">
-              Learn more about silver coins at{" "}
+              Learn more about the history of Silver Britannias at{" "}
               <a
-                href="https://www.monex.com/silver-coins/"
+                href={SITE_CONFIG.monexLinks.historyArticle}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-slate-700 hover:underline font-medium"
               >
-                Monex Silver Coins
+                Monex Knowledge Base
               </a>
             </p>
           </section>
 
-          {/* What Design Signals to Investors */}
+          {/* Royal Mint Heritage */}
           <section className="card p-6 md:p-8 mb-10 bg-slate-50 border-slate-200">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              What Design Signals to Investors
+              The Royal Mint
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              For investors, coin design conveys more than visual appeal:
+              The Royal Mint is one of the world&apos;s oldest and most respected mints, with a history spanning over 1,100 years:
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Government Authority</h3>
+                <h3 className="text-slate-900 font-semibold">Founded c. 886 AD</h3>
                 <p className="text-slate-500 text-sm">
-                  Official designs signal authenticity and weight/purity guarantees backed by sovereign governments.
+                  Originally located within the Tower of London, producing coins for British monarchs for centuries.
+                </p>
+              </div>
+              <div className="border-l-2 border-slate-300 pl-4">
+                <h3 className="text-slate-900 font-semibold">Modern Facility</h3>
+                <p className="text-slate-500 text-sm">
+                  Today operates from a state-of-the-art facility in Llantrisant, Wales, producing coins for the UK and over 60 other countries.
+                </p>
+              </div>
+              <div className="border-l-2 border-slate-300 pl-4">
+                <h3 className="text-slate-900 font-semibold">Industry-Leading Security</h3>
+                <p className="text-slate-500 text-sm">
+                  Pioneered advanced anti-counterfeiting technology now featured on Silver Britannias.
                 </p>
               </div>
               <div className="border-l-2 border-slate-300 pl-4">
                 <h3 className="text-slate-900 font-semibold">Global Recognition</h3>
                 <p className="text-slate-500 text-sm">
-                  Well-known designs are recognized by dealers and investors worldwide, facilitating transactions and supporting liquidity.
-                </p>
-              </div>
-              <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Collector Crossover</h3>
-                <p className="text-slate-500 text-sm">
-                  Artistic merit appeals to both bullion investors and numismatists, potentially broadening the buyer pool when selling.
-                </p>
-              </div>
-              <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Security Features</h3>
-                <p className="text-slate-500 text-sm">
-                  Modern designs incorporate anti-counterfeiting measures that protect investors and support confidence in the secondary market.
+                  The Royal Mint name guarantees authenticity, quality, and strong liquidity worldwide.
                 </p>
               </div>
             </div>
@@ -235,28 +237,28 @@ export default function DesignHistoryPage() {
           {/* Design Evolution */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              Design Comparison: Major Silver Coins
+              Design Evolution
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Each major silver coin has distinctive design characteristics:
+              While the core Britannia motif remains consistent, the coin has evolved significantly since its 1997 debut, with improvements to purity, security, and obverse design:
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-slate-50 rounded-lg p-5">
-                <h3 className="text-slate-800 font-semibold mb-3">American Silver Eagle</h3>
+                <h3 className="text-slate-800 font-semibold mb-3">1997–2012: Classic Era</h3>
                 <ul className="space-y-2 text-slate-500 text-sm">
-                  <li>• Adolph Weinman&apos;s 1916 Walking Liberty design</li>
-                  <li>• Heraldic eagle reverse (redesigned 2021)</li>
-                  <li>• Celebrates American freedom and ideals</li>
-                  <li>• Most traded silver coin in the world</li>
+                  <li>• Philip Nathan&apos;s original Britannia design</li>
+                  <li>• .958 silver (Britannia silver) purity</li>
+                  <li>• Traditional minting techniques</li>
+                  <li>• Queen Elizabeth II portrait throughout</li>
                 </ul>
               </div>
               <div className="bg-slate-50 rounded-lg p-5">
-                <h3 className="text-slate-800 font-semibold mb-3">Canadian Maple Leaf</h3>
+                <h3 className="text-slate-800 font-semibold mb-3">2013–Present: Modern Era</h3>
                 <ul className="space-y-2 text-slate-500 text-sm">
-                  <li>• Iconic maple leaf national symbol</li>
-                  <li>• Queen Elizabeth II / King Charles III portrait</li>
-                  <li>• Highest purity (.9999 fine)</li>
-                  <li>• Advanced security features</li>
+                  <li>• Upgraded to .999 fine silver purity (2013)</li>
+                  <li>• Advanced security features introduced (2021)</li>
+                  <li>• King Charles III portrait (from 2023)</li>
+                  <li>• Special editions with design variations</li>
                 </ul>
               </div>
             </div>
@@ -265,32 +267,32 @@ export default function DesignHistoryPage() {
           {/* Timeline */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-6">
-              Key Dates in Silver Bullion History
+              Key Dates in Silver Britannia History
             </h2>
             <div className="space-y-4">
               <div className="flex gap-4">
-                <div className="text-slate-700 font-bold w-20 flex-shrink-0">1986</div>
-                <p className="text-slate-600">American Silver Eagle program launches</p>
-              </div>
-              <div className="flex gap-4">
-                <div className="text-slate-700 font-bold w-20 flex-shrink-0">1988</div>
-                <p className="text-slate-600">Canadian Silver Maple Leaf introduced</p>
+                <div className="text-slate-700 font-bold w-20 flex-shrink-0">1987</div>
+                <p className="text-slate-600">Gold Britannia bullion coin launches, establishing the modern Britannia series</p>
               </div>
               <div className="flex gap-4">
                 <div className="text-slate-700 font-bold w-20 flex-shrink-0">1997</div>
-                <p className="text-slate-600">British Silver Britannia begins production</p>
+                <p className="text-slate-600">Silver Britannia bullion coin introduced with .958 purity and Queen Elizabeth II obverse</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-slate-700 font-bold w-20 flex-shrink-0">2008</div>
-                <p className="text-slate-600">Austrian Silver Philharmonic launched</p>
+                <div className="text-slate-700 font-bold w-20 flex-shrink-0">2013</div>
+                <p className="text-slate-600">Purity upgraded from .958 to .999 fine silver, improving IRA eligibility and investor appeal</p>
               </div>
               <div className="flex gap-4">
                 <div className="text-slate-700 font-bold w-20 flex-shrink-0">2021</div>
-                <p className="text-slate-600">American Silver Eagle reverse redesigned</p>
+                <p className="text-slate-600">Royal Mint introduces advanced security features: surface animation, micro-text, radial sunburst</p>
+              </div>
+              <div className="flex gap-4">
+                <div className="text-slate-700 font-bold w-20 flex-shrink-0">2023</div>
+                <p className="text-slate-600">First Silver Britannias featuring King Charles III portrait by Martin Jennings</p>
               </div>
               <div className="flex gap-4">
                 <div className="text-slate-700 font-bold w-20 flex-shrink-0">Today</div>
-                <p className="text-slate-600">Silver bullion coins remain popular investment vehicles worldwide</p>
+                <p className="text-slate-600">Silver Britannia remains the Royal Mint&apos;s flagship silver bullion product with global liquidity</p>
               </div>
             </div>
           </section>

@@ -1,48 +1,51 @@
 import { NextResponse } from "next/server";
 
-const llmsTxt = `# SilverCoinsMaster.com - LLMs.txt
+const llmsTxt = `# BritishSilverBritanniaCoins.com - LLMs.txt
 
-> An independent educational resource about silver bullion coins
+> An independent educational resource about British Silver Britannia coins from the Royal Mint
 
 ## Site Overview
 
-SilverCoinsMaster.com provides educational content about silver bullion coins, including government-minted coins like the American Silver Eagle with .999 fine purity.
+BritishSilverBritanniaCoins.com provides educational content about British Silver Britannia coins, minted by the Royal Mint with .999 fine silver purity and advanced security features.
 
 ## What This Site Is
 
 - Independent educational resource
-- Information about silver bullion coins
+- Information about British Silver Britannia coins
 - Live silver pricing data from Monex API
-- Educational articles about silver coin investing
+- Educational articles about Silver Britannia investing
 
 ## What This Site Is NOT
 
 - Not a dealer (we do not sell precious metals)
-- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not affiliated with Monex, the Royal Mint, or any dealers
 - Not financial advisors (no investment advice)
 - No endorsements of dealers or services
 
 ## Key Topics Covered
 
-- Silver bullion coin specifications (.999 fine, 1 oz)
-- Silver Eagle vs Maple Leaf vs Britannia comparisons
-- Premium and pricing dynamics
-- IRA eligibility for silver coins
+- Silver Britannia specifications (.999 fine, 1 oz, 38.61mm diameter)
+- Royal Mint security features (surface animation, micro-text, radial sunburst, latent image)
+- How Britannias compare to other major government-minted silver coins
+- Premium and pricing dynamics (typically 3-5% over spot)
+- IRA eligibility for Silver Britannias
 - Storage and authentication
 - Market dynamics affecting silver prices
 
 ## Product Focus
 
-Silver bullion coins are:
+British Silver Britannia coins are:
 - .999 fine silver purity
 - 1 troy ounce of pure silver
-- Government-minted legal tender
+- £2 British legal tender
+- Produced by the Royal Mint
+- Feature advanced security technology
 - IRA-eligible
 - Recognized worldwide for liquidity
 
 ## Pricing Data
 
-- Product pricing uses Monex API symbol: SAEV (Silver American Eagle)
+- Product pricing uses Monex API symbol: BSB (British Silver Britannia)
 - Spot pricing uses Monex API symbol: SBSPOT (Silver Spot)
 - Prices fetched fresh on page load only
 - No real-time updates or polling
@@ -59,7 +62,7 @@ Silver bullion coins are:
 
 ## Contact
 
-Website: https://www.silvercoinsmaster.com
+Website: https://www.britishsilverbritanniacoins.com
 
 ## Disclaimer
 

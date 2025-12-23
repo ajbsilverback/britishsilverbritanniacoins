@@ -3,74 +3,76 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Silver Bullion Coin Specifications | Technical Details & Investor Facts",
+  title: "Silver Britannia Specifications | Weight, Purity & Dimensions",
   description:
-    "Complete technical specifications for 1 oz silver bullion coins: .999 fine purity, weight, dimensions, legal tender status, IRA eligibility, and premium factors.",
+    "Complete technical specifications for British Silver Britannia coins: 1 troy oz .999 fine silver, 38.61mm diameter, 3.00mm thickness, £2 face value. Royal Mint security features and IRA eligibility details.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/coin-specs`,
   },
   openGraph: {
-    title: "Silver Bullion Coin Specifications | Technical Details",
+    title: "Silver Britannia Specifications | Weight, Purity & Dimensions",
     description:
-      "Complete technical specifications for 1 oz silver bullion coins: .999 purity, 1 troy oz weight, government-minted legal tender status, and IRA eligibility.",
+      "Complete technical specifications for British Silver Britannia coins: 1 troy oz .999 fine silver, 38.61mm diameter, £2 face value, Royal Mint security features.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Silver Bullion Coin Specifications",
+    title: "Silver Britannia Specifications",
     description:
-      "Complete technical specifications for 1 oz silver bullion coins: .999 purity, 1 troy oz weight, and IRA eligibility.",
+      "Complete specifications for British Silver Britannia coins: 1 troy oz .999 fine silver, 38.61mm diameter, £2 face value, IRA eligible.",
   },
 };
 
 const specsData = [
-  { label: "Purity", value: ".999 fine silver", highlight: true },
+  { label: "Purity", value: ".999 fine silver (99.9% pure)", highlight: true },
   { label: "Silver Content", value: "1.0000 troy ounce (31.1035 grams)" },
-  { label: "Gross Weight", value: "Approximately 31.1 grams (varies by coin)" },
-  { label: "Diameter", value: "Varies by mint (typically 38-40mm)" },
-  { label: "Thickness", value: "Varies by mint (typically 2.5-3.2mm)" },
-  { label: "Face Value", value: "Varies by issuing nation" },
-  { label: "Mints", value: "U.S. Mint, Royal Canadian Mint, Royal Mint, others" },
-  { label: "Edge", value: "Typically reeded" },
-  { label: "IRA Eligible", value: "Yes (most government-minted coins)", highlight: true },
+  { label: "Gross Weight", value: "31.21 grams (1.004 troy oz)" },
+  { label: "Diameter", value: "38.61 mm (1.52 inches)" },
+  { label: "Thickness", value: "3.00 mm (0.12 inches)" },
+  { label: "Face Value", value: "£2 GBP (British legal tender)" },
+  { label: "Issuing Mint", value: "Royal Mint, Llantrisant, Wales" },
+  { label: "Edge", value: "Reeded" },
+  { label: "Obverse", value: "Monarch portrait (King Charles III from 2023)" },
+  { label: "Reverse", value: "Britannia motif with trident and shield" },
+  { label: "IRA Eligible", value: "Yes (meets IRS .999 minimum)", highlight: true },
 ];
 
 const faqData = [
   {
-    question: "What is the purity of government-minted silver coins?",
+    question: "What is the purity of the British Silver Britannia?",
     answer:
-      "Most government-minted silver bullion coins are .999 fine silver, meaning they contain 99.9% pure silver. The Canadian Silver Maple Leaf is .9999 fine (99.99% pure). This high purity ensures maximum silver content and IRA eligibility.",
+      "The British Silver Britannia is .999 fine silver, meaning it contains 99.9% pure silver. This high purity was upgraded from the original .958 (Britannia silver) in 2013, ensuring maximum silver content and meeting IRS requirements for Precious Metals IRA eligibility.",
   },
   {
-    question: "How much silver is in a 1 oz silver coin?",
+    question: "How much silver is in a Silver Britannia?",
     answer:
-      "Each 1 oz silver bullion coin contains exactly 1.0000 troy ounce (31.1035 grams) of pure silver. The gross weight may vary slightly due to manufacturing tolerances, but the silver content is guaranteed.",
+      "Each British Silver Britannia contains exactly 1.0000 troy ounce (31.1035 grams) of pure silver. The gross weight is slightly higher at 31.21 grams due to the small amount of alloy metals.",
   },
   {
-    question: "Are silver bullion coins legal tender?",
+    question: "Is the Silver Britannia legal tender?",
     answer:
-      "Yes, government-minted silver bullion coins carry legal tender status in their country of origin. The American Silver Eagle has a $1 face value, though its silver content is worth significantly more. This government backing provides authenticity assurance.",
+      "Yes, the Silver Britannia carries legal tender status in the United Kingdom with a face value of £2 GBP. While its silver content is worth significantly more than face value, this government backing provides Royal Mint authenticity assurance and establishes the coin's official standing as British currency.",
   },
   {
-    question: "Can I hold silver coins in an IRA?",
+    question: "Can I hold Silver Britannias in an IRA?",
     answer:
-      "Yes, many silver bullion coins meet IRS requirements for inclusion in a Precious Metals IRA. The .999 purity meets the IRS minimum fineness requirement. You will need a qualified custodian and approved depository to hold IRA-owned coins.",
+      "Yes, British Silver Britannias meet IRS requirements for inclusion in a Precious Metals IRA. The .999 purity meets the IRS minimum fineness requirement. You will need a qualified custodian and approved depository to hold IRA-owned coins.",
   },
   {
-    question: "Why do silver coins have a premium over spot price?",
+    question: "What security features do Silver Britannias have?",
     answer:
-      "Premiums reflect minting costs, dealer margins, and supply/demand dynamics. Premiums account for mint production costs, distribution, the coin's legal tender status, and its recognition as a trusted government-minted product. Premiums vary based on market conditions.",
+      "Modern Silver Britannias feature the Royal Mint's advanced security technology including: micro-text (visible under magnification), surface animation (image shifts when tilted), radial sunburst lines (background pattern), and a latent image feature. These make Britannias among the most secure silver coins available.",
   },
   {
-    question: "How do different silver coins compare in specifications?",
+    question: "Why do Silver Britannias have a premium over spot price?",
     answer:
-      "Most 1 oz government silver coins share similar specifications: .999 purity, 1 troy oz silver content, and legal tender status. Key differences include diameter, thickness, design, and the issuing mint. The Canadian Maple Leaf offers .9999 purity.",
+      "Premiums reflect Royal Mint production costs, distribution margins, and supply/demand dynamics. Britannias command premiums for their advanced security features, Royal Mint quality assurance, legal tender status, and strong global recognition.",
   },
   {
-    question: "What affects silver coin premiums?",
+    question: "How does the Silver Britannia compare to other silver coins?",
     answer:
-      "Key premium drivers include: mint production capacity, dealer inventory levels, overall demand for physical silver, the coin's recognition and liquidity, and broader precious metals market conditions. During high demand periods, premiums typically increase.",
+      "The Silver Britannia offers .999 purity, industry-leading four-layer security features, and the heritage of the Royal Mint (operating since c. 886 AD). As British legal tender with £2 face value and the iconic Britannia design, it stands out among major government-minted silver coins for its anti-counterfeiting technology.",
   },
 ];
 
@@ -78,9 +80,9 @@ export default function CoinSpecsPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Silver Bullion Coin Specifications",
+    name: "British Silver Britannia Specifications",
     description:
-      "Complete technical specifications and investor facts for 1 oz silver bullion coins.",
+      "Complete technical specifications and investor facts for British Silver Britannia coins from the Royal Mint.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     publisher: {
       "@type": "Organization",
@@ -118,10 +120,10 @@ export default function CoinSpecsPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              <span className="accent-text">Silver Coin</span> Specifications
+              <span className="accent-text">Silver Britannia</span> Specifications
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Technical details and investor-facing facts for 1 oz silver bullion coins from major government mints.
+              Technical details for British Silver Britannia coins: 1 troy ounce of .999 fine silver, £2 face value, and Royal Mint quality assurance.
             </p>
           </div>
 
@@ -148,41 +150,41 @@ export default function CoinSpecsPage() {
             </div>
           </section>
 
-          {/* Purity Standard */}
+          {/* Security Features */}
           <section className="card p-6 md:p-8 mb-10 bg-slate-50 border-slate-200">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              The .999 Purity Standard
+              Royal Mint Security Features
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              At .999 fineness, government-minted silver coins contain 99.9% pure silver with minimal alloys.
+              Introduced in 2021, the Silver Britannia incorporates the Royal Mint&apos;s cutting-edge anti-counterfeiting technology, making it one of the most secure silver bullion coins in the world:
             </p>
             <ul className="space-y-3 text-slate-600">
               <li className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">•</span>
-                <span><strong className="text-slate-900">Maximum silver content</strong>: Virtually all of the coin&apos;s weight is pure silver</span>
+                <span><strong className="text-slate-900">Surface Animation</strong>: The Britannia design appears to shift and move when the coin is tilted, creating a dynamic wave-like visual effect that is extremely difficult to counterfeit</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">•</span>
-                <span><strong className="text-slate-900">IRS compliance</strong>: Meets the .999 minimum fineness for Precious Metals IRAs</span>
+                <span><strong className="text-slate-900">Micro-Text</strong>: Tiny inscriptions around the design are visible only under magnification, requiring precision minting that is nearly impossible to replicate</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">•</span>
-                <span><strong className="text-slate-900">Global recognition</strong>: Standard purity for major silver bullion coins worldwide</span>
+                <span><strong className="text-slate-900">Radial Sunburst</strong>: Fine lines radiating from the center create a distinctive background pattern unique to genuine Royal Mint Britannias</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">•</span>
-                <span><strong className="text-slate-900">Simple valuation</strong>: Silver content equals coin weight, making spot price calculations straightforward</span>
+                <span><strong className="text-slate-900">Latent Image</strong>: A trident and padlock symbol becomes visible only when viewed from specific angles, providing quick visual authentication</span>
               </li>
             </ul>
             <p className="text-slate-500 text-sm mt-4">
-              Learn more about silver purity at{" "}
+              These features make authentication straightforward for dealers and investors, supporting the coin&apos;s strong liquidity. Learn more at{" "}
               <a
-                href="https://www.monex.com/silver-coins/"
+                href={SITE_CONFIG.monexLinks.productPage}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-slate-700 hover:underline font-medium"
               >
-                Monex Silver Coins
+                Monex Silver Britannia
               </a>
             </p>
           </section>
@@ -190,34 +192,34 @@ export default function CoinSpecsPage() {
           {/* Legal Tender Status */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-slate-900 mb-4">
-              Legal Tender Status
+              Legal Tender Status & Investor Appeal
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Government-minted silver coins carry legal tender status in their country of origin. This government backing provides:
+              The British Silver Britannia carries £2 legal tender status in the United Kingdom—a face value established by the Royal Mint that provides government backing and investor protections:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-slate-50 rounded-lg p-4">
+                <h3 className="text-slate-800 font-semibold mb-2">Royal Mint Guarantee</h3>
+                <p className="text-slate-500 text-sm">
+                  Weight (1 troy oz) and purity (.999 fine) guaranteed by the Royal Mint, with over 1,100 years of minting heritage since c. 886 AD.
+                </p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-4">
                 <h3 className="text-slate-800 font-semibold mb-2">Authenticity Assurance</h3>
                 <p className="text-slate-500 text-sm">
-                  Produced by sovereign mints with strict quality controls and anti-counterfeiting measures.
+                  Produced with strict quality controls and industry-leading security features for easy authentication.
                 </p>
               </div>
               <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">Government Guarantee</h3>
+                <h3 className="text-slate-800 font-semibold mb-2">Global Liquidity</h3>
                 <p className="text-slate-500 text-sm">
-                  Weight and purity backed by the issuing government.
-                </p>
-              </div>
-              <div className="bg-slate-50 rounded-lg p-4">
-                <h3 className="text-slate-800 font-semibold mb-2">Market Recognition</h3>
-                <p className="text-slate-500 text-sm">
-                  Widely recognized and accepted by dealers worldwide, supporting liquidity.
+                  Widely recognized and accepted by dealers worldwide, allowing easy buying and selling in major markets.
                 </p>
               </div>
               <div className="bg-slate-50 rounded-lg p-4">
                 <h3 className="text-slate-800 font-semibold mb-2">IRA Eligibility</h3>
                 <p className="text-slate-500 text-sm">
-                  Legal tender status is one requirement for Precious Metals IRA inclusion.
+                  Legal tender status and .999 purity meet IRS requirements for tax-advantaged Precious Metals IRAs.
                 </p>
               </div>
             </div>
@@ -229,7 +231,7 @@ export default function CoinSpecsPage() {
               IRA Eligibility Considerations
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Many silver bullion coins qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
+              British Silver Britannias qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
             </p>
             <ul className="space-y-3 text-slate-600 mb-4">
               <li className="flex items-start gap-3">
@@ -238,7 +240,7 @@ export default function CoinSpecsPage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-600">✓</span>
-                <span>Produced by an approved national mint</span>
+                <span>Produced by an approved national mint (Royal Mint)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-600">✓</span>
@@ -262,49 +264,49 @@ export default function CoinSpecsPage() {
               Understanding Premium Drivers
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              Silver coins trade at a premium above the spot price of silver. Factors that influence premiums include:
+              Silver Britannias trade at a premium above the spot price of silver. Factors that influence premiums include:
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Minting Costs</h3>
+                <h3 className="text-slate-900 font-semibold">Royal Mint Production</h3>
                 <p className="text-slate-500 text-sm">
-                  Sovereign mint production, quality control, and distribution expenses.
+                  Advanced security technology, precision manufacturing, and strict quality control.
                 </p>
               </div>
               <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Dealer Margins</h3>
+                <h3 className="text-slate-900 font-semibold">Distribution Chain</h3>
                 <p className="text-slate-500 text-sm">
-                  Wholesale and retail markups that fund dealer operations.
+                  Authorized distributors and dealer margins that fund operations.
                 </p>
               </div>
               <div className="border-l-2 border-slate-300 pl-4">
                 <h3 className="text-slate-900 font-semibold">Supply & Demand</h3>
                 <p className="text-slate-500 text-sm">
-                  Mint production capacity versus investor demand for physical silver.
+                  Royal Mint production capacity versus global investor demand.
                 </p>
               </div>
               <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Market Conditions</h3>
+                <h3 className="text-slate-900 font-semibold">Security Premium</h3>
                 <p className="text-slate-500 text-sm">
-                  Economic uncertainty, inflation concerns, and safe-haven demand can increase premiums.
+                  Advanced anti-counterfeiting features command additional value for security-conscious investors.
                 </p>
               </div>
               <div className="border-l-2 border-slate-300 pl-4">
-                <h3 className="text-slate-900 font-semibold">Product Recognition</h3>
+                <h3 className="text-slate-900 font-semibold">Global Recognition</h3>
                 <p className="text-slate-500 text-sm">
-                  Government backing and global recognition support competitive spreads.
+                  Royal Mint heritage and worldwide dealer acceptance support liquidity.
                 </p>
               </div>
             </div>
             <p className="text-slate-500 text-sm mt-4">
-              View current silver pricing at{" "}
+              View current Britannia pricing at{" "}
               <a
-                href="https://www.monex.com/silver-prices/"
+                href={SITE_CONFIG.monexLinks.priceCharts}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-slate-700 hover:underline font-medium"
               >
-                Monex Silver Prices
+                Monex Britannia Price Charts
               </a>
             </p>
           </section>
@@ -335,7 +337,7 @@ export default function CoinSpecsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/live-silver-prices" className="btn-primary">
-                View Silver Prices
+                View Britannia Prices
               </Link>
               <Link href="/where-to-buy" className="btn-secondary">
                 Where to Buy

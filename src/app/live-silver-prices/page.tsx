@@ -10,24 +10,24 @@ import { pricesQA } from "@/data/qa-content";
 import { fetchProductSpot, fetchMetalSpotIndex, formatUSD } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "Live Silver Coin Prices & Silver Spot Price Charts",
+  title: "Live Silver Britannia Prices & Silver Spot Price Charts",
   description:
-    "Track live silver coin prices and silver spot prices with interactive charts. Understand premiums, bid-ask spreads, and market dynamics for informed silver coin investing.",
+    "Track live British Silver Britannia coin prices and silver spot prices. Understand premiums (typically 3-5% over spot), bid-ask spreads, and market dynamics. Royal Mint .999 fine silver with advanced security features.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/live-silver-prices`,
   },
   openGraph: {
-    title: "Live Silver Coin Prices & Silver Spot Price Charts",
+    title: "Live Silver Britannia Prices & Silver Spot Price Charts",
     description:
-      "Track live silver coin prices and silver spot prices with interactive charts. Understand premiums and market dynamics.",
+      "Track live Silver Britannia prices and silver spot prices. Understand premiums and market dynamics for Royal Mint .999 fine silver coins.",
     url: `${SITE_CONFIG.domain}/live-silver-prices`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Live Silver Coin Prices & Silver Spot Price Charts",
+    title: "Live Silver Britannia Prices & Silver Spot Price Charts",
     description:
-      "Track live silver coin prices and silver spot prices with interactive charts and market data.",
+      "Track live Silver Britannia prices and silver spot prices. Understand premiums for Royal Mint .999 fine silver coins.",
   },
 };
 
@@ -41,15 +41,15 @@ export default async function PricesPage() {
   const formatSpotPrice = (price: number) => formatUSD(price).replace(".00", "");
   
   // Calculate example prices based on current spot
-  const eaglePrice = Math.round(spotPerOz * 1.05);  // 5% premium
-  const maplePrice = Math.round(spotPerOz * 1.04); // 4% premium
+  const britanniaPrice = Math.round(spotPerOz * 1.04); // 4% premium
+  const otherCoinPrice = Math.round(spotPerOz * 1.05); // ~4-5% premium for other gov't coins
   
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Silver Coin Prices & Live Silver Spot Prices",
+    name: "Silver Britannia Prices & Live Silver Spot Prices",
     description:
-      "Track live silver coin prices and silver spot prices. Real-time charts and market data for silver coin investors.",
+      "Track live Silver Britannia prices and silver spot prices. Real-time charts and market data for Britannia investors.",
     url: `${SITE_CONFIG.domain}/live-silver-prices`,
     publisher: {
       "@type": "Organization",
@@ -64,18 +64,18 @@ export default async function PricesPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What determines the price of a silver bullion coin?",
+        name: "What determines the price of a Silver Britannia?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The price of a silver bullion coin consists of the silver spot price plus a premium that covers minting, distribution, and dealer margins. Premiums typically range from 3-6% over spot.",
+          text: "The price of a Silver Britannia consists of the silver spot price plus a premium that covers Royal Mint production, distribution, and dealer margins. Premiums typically range from 3-5% over spot.",
         },
       },
       {
         "@type": "Question",
-        name: "Why do silver coins have a premium over spot price?",
+        name: "Why do Silver Britannias have a premium over spot price?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The premium covers mint production costs, Authorized Purchaser margins, dealer margins, and the value of the coin's .999 fine purity and legal tender status. Government-minted coins carry premiums for their guaranteed authenticity and liquidity.",
+          text: "The premium covers Royal Mint production costs, advanced security feature manufacturing, distributor margins, dealer margins, and the value of the coin's .999 fine purity and legal tender status. Britannias command premiums for their security features and global recognition.",
         },
       },
       {
@@ -90,11 +90,11 @@ export default async function PricesPage() {
   };
 
   const aiSummaryBullets = [
-    "This page displays live silver coin prices via Monex data",
-    "Track silver spot prices per troy ounce for reference",
-    "Understand how spot prices relate to silver coin retail pricing",
-    "Learn about premium structures: silver coins have 3-6% premiums",
-    "Compare pricing across different silver bullion coins",
+    "Live Silver Britannia prices via Monex data (Royal Mint .999 fine silver)",
+    "Track silver spot prices per troy ounce for market reference",
+    "Understand spot-to-retail pricing: Britannias carry 3-5% premiums",
+    "Learn what drives premiums: Royal Mint production, security features, distribution",
+    "Compare Britannia pricing vs other major government-minted silver coins",
   ];
 
   return (
@@ -114,7 +114,7 @@ export default async function PricesPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              <span className="accent-text">Silver Coin Prices</span>
+              <span className="accent-text">Silver Britannia Prices</span>
               <br />
               <span className="text-slate-900">& Live Silver Spot Prices</span>
             </h1>
@@ -124,11 +124,12 @@ export default async function PricesPage() {
 
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mt-6 text-left">
               Track live silver prices and understand how spot pricing affects 
-              the cost of silver bullion coins. Use these tools to make 
+              the cost of British Silver Britannia coins—Royal Mint bullion featuring 
+              .999 fine silver and advanced security features. Use these tools to make 
               informed decisions about your precious metals investments. Return 
               to our{" "}
               <Link href="/" className="text-slate-700 hover:underline font-medium">
-                Silver Bullion Coins overview
+                Silver Britannia overview
               </Link>{" "}
               or explore our{" "}
               <Link href="/resources" className="text-slate-700 hover:underline font-medium">
@@ -142,7 +143,7 @@ export default async function PricesPage() {
       {/* Pricing Zone - Live Cards */}
       <section className="py-10 md:py-12 section-dark">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          {/* Live Silver Coin Price Card */}
+          {/* Live Silver Britannia Price Card */}
           <LiveProductPriceCard showCta={false} />
 
           {/* Live Silver Spot Index Card */}
@@ -160,67 +161,67 @@ export default async function PricesPage() {
         </div>
       </section>
 
-      {/* Understanding Silver Coin Pricing */}
+      {/* Understanding Silver Britannia Pricing */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6 text-center">
-              Understanding <span className="accent-text">Silver Coin Pricing</span>
+              Understanding <span className="accent-text">Britannia Pricing</span>
             </h2>
 
             <div className="prose prose-lg max-w-none space-y-6">
               <div className="card">
                 <h3 className="text-2xl font-display font-semibold mb-4 text-slate-800">
-                  Spot Price vs. Silver Coin Price
+                  Spot Price vs. Britannia Price
                 </h3>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  When purchasing a silver bullion coin, you&apos;ll pay a premium 
+                  When purchasing a Silver Britannia, you&apos;ll pay a premium 
                   above the spot price. The spot price represents the current market 
                   rate for silver traded in bulk on commodities exchanges.
                 </p>
                 <p className="text-slate-600 leading-relaxed">
-                  Silver coins typically carry <strong className="text-slate-900">3-6% 
-                  premiums over spot</strong>, which covers mint production costs, 
-                  Authorized Purchaser margins, dealer margins, and reflects the coin&apos;s 
-                  .999 fine purity and legal tender status.
+                  Silver Britannias typically carry <strong className="text-slate-900">3-5% 
+                  premiums over spot</strong>, which covers Royal Mint production costs, 
+                  advanced security feature manufacturing, distributor margins, dealer margins, 
+                  and reflects the coin&apos;s .999 fine purity and legal tender status.
                 </p>
               </div>
 
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-display font-semibold mb-4 text-slate-800">
-                  Why Government Coins Carry Premiums
+                  Why Britannias Command Premiums
                 </h3>
                 <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start">
                     <span className="text-slate-500 mr-3">•</span>
                     <span>
-                      <strong className="text-slate-900">Minting Costs:</strong> Government mints 
-                      use precision manufacturing to achieve .999 fine purity with 
-                      exact weight specifications.
+                      <strong className="text-slate-900">Royal Mint Quality:</strong> The Royal Mint 
+                      uses precision manufacturing to achieve .999 fine purity with 
+                      exact weight specifications and advanced security features.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-slate-500 mr-3">•</span>
+                    <span>
+                      <strong className="text-slate-900">Security Technology:</strong> Britannias 
+                      feature industry-leading anti-counterfeiting measures including 
+                      micro-text, surface animation, and radial sunburst patterns.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-slate-500 mr-3">•</span>
                     <span>
                       <strong className="text-slate-900">Distribution Chain:</strong> Coins 
-                      flow from the Mint to Authorized Purchasers to dealers, each adding 
+                      flow from the Royal Mint to authorized distributors to dealers, each adding 
                       margin for their services.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-slate-500 mr-3">•</span>
                     <span>
-                      <strong className="text-slate-900">Government Guarantee:</strong> Legal 
-                      tender status and government backing provide authenticity assurance 
-                      that commands value.
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-slate-500 mr-3">•</span>
-                    <span>
-                      <strong className="text-slate-900">Strong Liquidity:</strong> Recognized 
-                      worldwide, government-minted silver coins are easy to sell, which supports their 
-                      pricing power.
+                      <strong className="text-slate-900">Strong Global Liquidity:</strong> Recognized 
+                      worldwide by dealers, Silver Britannias are easy to buy and sell in 
+                      major markets, which supports their investor appeal and pricing power.
                     </span>
                   </li>
                 </ul>
@@ -238,11 +239,10 @@ export default async function PricesPage() {
                     <strong className="text-slate-700">Example at {formatSpotPrice(spotPerOz)}/oz spot:</strong>
                   </p>
                   <ul className="text-slate-600 text-sm space-y-2">
-                    <li>• <strong className="text-slate-900">Silver Eagle (~5% premium):</strong> ~{formatSpotPrice(eaglePrice)}</li>
-                    <li>• <strong className="text-slate-900">Canadian Maple (~4% premium):</strong> ~{formatSpotPrice(maplePrice)}</li>
-                    <li>• <strong className="text-slate-900">Britannia (~4% premium):</strong> ~{formatSpotPrice(Math.round(spotPerOz * 1.04))}</li>
+                    <li>• <strong className="text-slate-900">Silver Britannia (~4% premium):</strong> ~{formatSpotPrice(britanniaPrice)}</li>
+                    <li>• <strong className="text-slate-900">Other gov&apos;t coins (~4-5% premium):</strong> ~{formatSpotPrice(otherCoinPrice)}</li>
                     <li className="pt-2 border-t border-slate-200">
-                      <strong className="text-slate-700">Key factor:</strong> Government-minted coins offer strong liquidity at competitive premiums
+                      <strong className="text-slate-700">Key factor:</strong> Britannias offer advanced security features at competitive premiums
                     </li>
                   </ul>
                 </div>
@@ -262,12 +262,12 @@ export default async function PricesPage() {
             For detailed market analysis and pricing information:
           </p>
           <a
-            href="https://www.monex.com/silver-prices/"
+            href={SITE_CONFIG.monexLinks.priceCharts}
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center text-slate-700 hover:text-slate-900 transition-colors font-medium"
           >
-            <span>Research silver prices at Monex</span>
+            <span>Research Britannia prices at Monex</span>
             <svg
               className="w-4 h-4 ml-2"
               fill="none"
@@ -289,16 +289,16 @@ export default async function PricesPage() {
       <section className="py-12 md:py-16 section-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-            Silver Coin Resources
+            Silver Britannia Resources
           </h2>
           <p className="text-slate-600 mb-6">
             Explore our comprehensive{" "}
             <Link href="/resources" className="text-slate-700 hover:underline font-medium">
               educational resources
             </Link>{" "}
-            to deepen your understanding of silver coin investing, or return to our{" "}
+            to deepen your understanding of Silver Britannia investing, or return to our{" "}
             <Link href="/" className="text-slate-700 hover:underline font-medium">
-              Silver Bullion Coins overview
+              Silver Britannia overview
             </Link>.
           </p>
           <Link href="/resources" className="btn-primary">

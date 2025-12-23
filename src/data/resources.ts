@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from "@/lib/siteConfig";
+
 export interface Resource {
   slug: string;
   title: string;
@@ -10,123 +12,123 @@ export interface Resource {
 export const resources: Resource[] = [
   {
     slug: "premiums-explained",
-    title: "Understanding Silver Coin Premiums: A Complete Guide",
+    title: "Understanding Silver Britannia Premiums: A Complete Guide",
     description:
-      "Learn what premiums are, why silver coins have premiums over spot, and how to evaluate costs when purchasing silver bullion coins.",
+      "Learn what premiums are, why Silver Britannias carry 3-5% premiums over spot, and how Royal Mint production costs, security features, and dealer margins affect your purchase price.",
     excerpt:
-      "Discover why silver bullion coins carry premiums over spot and how to maximize your silver buying power.",
+      "Discover why Silver Britannias carry premiums over spot and how to maximize your silver buying power.",
     category: "Pricing",
-    monexLink: "https://www.monex.com/silver-prices/",
+    monexLink: SITE_CONFIG.monexLinks.priceCharts,
   },
   {
     slug: "coin-comparison",
-    title: "Silver Eagle vs Maple Leaf vs Britannia: Comparing Silver Coins",
+    title: "How Silver Britannias Compare: Security, Purity & Liquidity",
     description:
-      "A detailed comparison of major silver bullion coins to help you choose the right coin for your investment goals.",
+      "Compare the British Silver Britannia's .999 purity, Royal Mint security features, and global liquidity against other major silver bullion coins.",
     excerpt:
-      "Compare American Silver Eagle, Canadian Maple Leaf, and British Britannia coins across purity, premiums, and liquidity.",
+      "Understand how Silver Britannias stack up on purity, premiums, security features, and investor appeal.",
     category: "Investment",
-    monexLink: "https://www.monex.com/silver-coins/",
+    monexLink: SITE_CONFIG.monexLinks.productPage,
   },
   {
     slug: "storage-options",
-    title: "Storing Your Silver Coins: Options and Best Practices",
+    title: "Storing Your Silver Britannias: Options and Best Practices",
     description:
-      "Compare storage solutions for silver bullion coins from home safes to bank safe deposit boxes and professional vaults.",
+      "Compare storage solutions for Silver Britannia coins: home safes, bank safe deposit boxes, and IRS-approved depositories for IRA holdings.",
     excerpt:
-      "A comprehensive guide to securing your silver coin investment with appropriate storage solutions.",
+      "A comprehensive guide to securing your Silver Britannia investment with appropriate storage solutions.",
     category: "Security",
-    monexLink: "https://www.monex.com/knowledge-base/silver-investing/",
+    monexLink: SITE_CONFIG.monexLinks.knowledgeBase,
   },
   {
     slug: "purity-advantages",
-    title: "The .999 Purity Standard: Why Silver Purity Matters",
+    title: "Silver Britannia .999 Purity: What It Means for Investors",
     description:
-      "Understanding the significance of .999 fine purity in silver coins and how it compares across different mints.",
+      "Understanding the .999 fine silver purity of Silver Britannias, upgraded from .958 in 2013, and why it matters for IRA eligibility and valuation.",
     excerpt:
-      "Learn why silver coin purity standards matter for investors and IRA eligibility.",
+      "Learn why Silver Britannia purity standards matter for investors and IRA eligibility.",
     category: "Products",
-    monexLink: "https://www.monex.com/silver-coins/",
+    monexLink: SITE_CONFIG.monexLinks.productPage,
   },
   {
     slug: "liquidity-considerations",
-    title: "Liquidity Considerations for Silver Coins",
+    title: "Silver Britannia Liquidity: Buying and Selling with Ease",
     description:
-      "Understanding the liquidity of silver bullion coins and how to plan for buying and selling.",
+      "Understanding the strong global liquidity of Silver Britannia coins, how Royal Mint recognition supports dealer markets, and strategies for efficient transactions.",
     excerpt:
-      "Explore the liquidity dynamics of silver coins and strategies for efficient transactions.",
+      "Explore the liquidity dynamics of Silver Britannias and strategies for efficient transactions.",
     category: "Investment",
-    monexLink: "https://www.monex.com/silver-prices/",
+    monexLink: SITE_CONFIG.monexLinks.priceCharts,
   },
   {
     slug: "market-dynamics",
-    title: "Silver Market Dynamics: What Moves Silver Coin Prices",
+    title: "Silver Market Dynamics: What Moves Silver Britannia Prices",
     description:
-      "Understanding the economic factors, industrial demand, and market forces that influence silver prices.",
+      "Understanding the economic factors, industrial demand (solar, electronics), investment flows, and market forces that influence silver and Britannia prices.",
     excerpt:
-      "Explore the key drivers behind silver price movements and what they mean for silver coin investors.",
+      "Explore the key drivers behind silver price movements and what they mean for Britannia investors.",
     category: "Market",
-    monexLink: "https://www.monex.com/silver-prices/",
+    monexLink: SITE_CONFIG.monexLinks.silverPrices,
   },
   {
     slug: "spreads-explained",
-    title: "Understanding Bid-Ask Spreads on Silver Coins",
+    title: "Understanding Bid-Ask Spreads on Silver Britannias",
     description:
-      "Learn how dealer spreads work and strategies to minimize costs when buying and selling silver coins.",
+      "Learn how dealer spreads work on Silver Britannias (typically 3-5%), calculate your break-even point, and minimize costs when buying and selling.",
     excerpt:
-      "Master the concept of bid-ask spreads and learn how to get the best prices on your silver trades.",
+      "Master the concept of bid-ask spreads and learn how to get the best prices on your Britannia trades.",
     category: "Pricing",
-    monexLink: "https://www.monex.com/silver-prices/",
+    monexLink: SITE_CONFIG.monexLinks.priceCharts,
   },
   {
     slug: "authentication-guide",
-    title: "Authenticating Silver Coins: Security Features & Verification",
+    title: "Authenticating Silver Britannias: Royal Mint Security Features",
     description:
-      "Best practices for verifying authenticity and understanding security features on silver bullion coins.",
+      "Learn to verify Silver Britannia authenticity using Royal Mint security features: surface animation, micro-text, radial sunburst, and latent image technology.",
     excerpt:
-      "Protect your investment with proper authentication knowledge and verification techniques.",
+      "Protect your investment by understanding the four-layer security features that make Britannias easy to authenticate.",
     category: "Security",
-    monexLink: "https://www.monex.com/silver-coins/",
+    monexLink: SITE_CONFIG.monexLinks.productPage,
   },
   {
     slug: "ira-eligibility",
-    title: "Silver Coin IRA Eligibility: Adding Coins to Your Retirement Account",
+    title: "Silver Britannia IRA Eligibility: Adding Britannias to Your IRA",
     description:
-      "Understanding how silver bullion coins qualify for Precious Metals IRAs and the requirements for IRA ownership.",
+      "How Silver Britannias meet IRS requirements for Precious Metals IRAs: .999 purity, government-minted status, and approved custodian requirements.",
     excerpt:
-      "Learn how silver coins meet IRS requirements for tax-advantaged retirement accounts.",
+      "Learn how Silver Britannias meet IRS requirements for tax-advantaged retirement accounts.",
     category: "Investment",
-    monexLink: "https://www.monex.com/investing-in-silver/",
+    monexLink: SITE_CONFIG.monexLinks.investingInSilver,
   },
   {
     slug: "portfolio-allocation",
-    title: "Allocating to Silver Coins in Your Portfolio",
+    title: "Allocating to Silver Britannias in Your Portfolio",
     description:
-      "Strategic considerations for incorporating silver bullion coins into a diversified investment portfolio.",
+      "Strategic considerations for incorporating Silver Britannia coins into a diversified portfolio: allocation percentages, dollar-cost averaging, and physical vs paper silver.",
     excerpt:
-      "Discover how silver coins fit into portfolio diversification strategies for serious investors.",
+      "Discover how Silver Britannias fit into portfolio diversification strategies for serious investors.",
     category: "Investment",
-    monexLink: "https://www.monex.com/investing-in-silver/",
+    monexLink: SITE_CONFIG.monexLinks.investingInSilver,
   },
   {
     slug: "first-time-buyers-guide",
-    title: "Buying Silver Coins: What First-Time Buyers Should Know",
+    title: "Buying Silver Britannias: What First-Time Buyers Should Know",
     description:
-      "A comprehensive guide for first-time buyers covering the practical process of purchasing silver bullion coins.",
+      "A comprehensive guide for first-time Silver Britannia buyers: choosing reputable dealers, understanding premiums, payment methods, and verifying Royal Mint authenticity.",
     excerpt:
-      "Learn what to expect when purchasing your first silver coin, from choosing a dealer to taking delivery.",
+      "Learn what to expect when purchasing your first Silver Britannia, from choosing a dealer to taking delivery.",
     category: "Buying Guide",
-    monexLink: "https://www.monex.com/silver-coins/",
+    monexLink: SITE_CONFIG.monexLinks.productPage,
   },
   {
     slug: "tax-considerations",
-    title: "Tax Considerations When Buying and Selling Silver Coins",
+    title: "Tax Considerations When Buying and Selling Silver Britannias",
     description:
-      "A high-level overview of tax considerations related to physical silver coin ownership, including capital gains and IRA ownership.",
+      "A high-level overview of tax considerations for Silver Britannia ownership: collectible classification, capital gains, state sales tax, and IRA ownership rules.",
     excerpt:
       "Understand the tax landscape for physical silver investments before making your purchase decision.",
     category: "Tax & Legal",
-    monexLink: "https://www.monex.com/knowledge-base/silver-investing/",
+    monexLink: SITE_CONFIG.monexLinks.knowledgeBase,
   },
 ];
 

@@ -1,14 +1,14 @@
 /**
  * SITE CONFIGURATION - Single Source of Truth
  * 
- * Silver Coins Master Template
+ * British Silver Britannia Coins
  * 
  * ═══════════════════════════════════════════════════════════════════════════
  * GUARDRAILS - Do Not Modify Without Intentional Review
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * PROTECTED ELEMENTS:
- * - Pricing symbols (placeholder - update for specific site)
+ * - Pricing symbols (BSB for product, SBSPOT for spot)
  * - Monex API endpoints
  * - Monex chart embed script
  * - Navigation IA
@@ -24,9 +24,9 @@
  * - Vercel auto-deploys from main only
  * 
  * CONTENT:
- * - This template is for silver bullion coin educational sites
- * - Focus on: purity (.999 fine), premiums, liquidity, IRA eligibility,
- *   government-minted coins, obverse/reverse designs
+ * - This site is about British Silver Britannia coins from the Royal Mint
+ * - Focus on: .999 fine purity, premiums, liquidity, IRA eligibility,
+ *   Royal Mint, obverse/reverse designs, security features
  * 
  * ═══════════════════════════════════════════════════════════════════════════
  */
@@ -37,20 +37,20 @@ export const SITE_CONFIG = {
   // ============================================================
   
   /** Primary domain with https:// prefix */
-  domain: "https://www.silvercoinsmaster.com",
+  domain: "https://www.britishsilverbritanniacoins.com",
   
   /** Canonical domain (usually same as domain) */
-  canonicalDomain: "https://www.silvercoinsmaster.com",
+  canonicalDomain: "https://www.britishsilverbritanniacoins.com",
   
   /** Brand name displayed in UI and metadata */
-  brandName: "Silver Bullion Coins",
+  brandName: "British Silver Britannia Coins",
 
   // ============================================================
   // PRODUCT DEFINITION
   // ============================================================
   
   /** Primary product name */
-  primaryProduct: "silver bullion coins",
+  primaryProduct: "British Silver Britannia coins",
   
   /** Metal type: "gold" | "silver" | "platinum" | "palladium" */
   metal: "silver",
@@ -70,9 +70,9 @@ export const SITE_CONFIG = {
   
   /** 
    * Product price symbol for Monex API
-   * SAEV = Silver American Eagle (product pricing)
+   * BSB = British Silver Britannia (product pricing)
    */
-  productSymbol: "SAEV",
+  productSymbol: "BSB",
   
   /**
    * Spot index symbol for Monex API (raw metal spot price)
@@ -86,15 +86,17 @@ export const SITE_CONFIG = {
   
   /** Target audience description */
   angle:
-    "investors seeking government-minted silver bullion coins with .999 fine purity and strong liquidity",
+    "investors seeking Royal Mint silver bullion coins with .999 fine purity, advanced security features, and strong global liquidity",
 
   /** Array of relevant Monex.com links for citations */
-  monexLinks: [
-    "https://www.monex.com/silver-coins/",
-    "https://www.monex.com/silver-prices/",
-    "https://www.monex.com/investing-in-silver/",
-    "https://www.monex.com/knowledge-base/silver-investing/",
-  ],
+  monexLinks: {
+    productPage: "https://www.monex.com/britannia-silver-coins-for-sale/",
+    priceCharts: "https://www.monex.com/britannia-silver-coins-price-charts/",
+    investingInSilver: "https://www.monex.com/investing-in-silver/",
+    silverPrices: "https://www.monex.com/silver-prices/",
+    knowledgeBase: "https://www.monex.com/knowledge-base/silver-investing/silver-coins/british-silver-britannia/",
+    historyArticle: "https://www.monex.com/knowledge/history-behind-british-britannia-silver-coins/",
+  },
 } as const;
 
 export type SiteConfig = typeof SITE_CONFIG;

@@ -8,24 +8,24 @@ import { homeQA } from "@/data/qa-content";
 import { fetchProductSpot, formatUSD } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "Silver Bullion Coins | Expert Guide to .999 Fine Silver Coins",
+  title: "British Silver Britannia Coins | Royal Mint .999 Fine Silver Guide",
   description:
-    "Comprehensive guide to silver bullion coins. Government-minted, .999 fine silver coins with strong liquidity. Learn about pricing, premiums, IRA eligibility, and investing.",
+    "Comprehensive guide to British Silver Britannia coins from the Royal Mint. Government-minted .999 fine silver featuring the iconic Britannia motif with trident and shield. Advanced security features, strong liquidity, and IRA eligibility.",
   alternates: {
     canonical: SITE_CONFIG.canonicalDomain,
   },
   openGraph: {
-    title: "Silver Bullion Coins | Expert Guide to .999 Fine Silver Coins",
+    title: "British Silver Britannia Coins | Royal Mint .999 Fine Silver Guide",
     description:
-      "Comprehensive guide to silver bullion coins. Government-minted, .999 fine silver with strong liquidity.",
+      "Comprehensive guide to British Silver Britannia coins from the Royal Mint. Government-minted .999 fine silver with the iconic Britannia design, advanced security features, and strong global liquidity.",
     url: SITE_CONFIG.domain,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Silver Bullion Coins | Expert Guide to .999 Fine Silver Coins",
+    title: "British Silver Britannia Coins | Royal Mint .999 Fine Silver Guide",
     description:
-      "Comprehensive guide to silver bullion coins. Government-minted, .999 fine silver coins.",
+      "Comprehensive guide to British Silver Britannia coins. Government-minted .999 fine silver with the iconic Britannia motif and advanced security features.",
   },
 };
 
@@ -50,9 +50,9 @@ export default async function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `${SITE_CONFIG.brandName} - Your Guide to Silver Bullion Coins`,
+    name: `${SITE_CONFIG.brandName} - Your Guide to Royal Mint Silver Britannia`,
     description:
-      "Comprehensive educational resource about silver bullion coins, government-minted .999 fine silver with strong liquidity.",
+      "Comprehensive educational resource about British Silver Britannia coins from the Royal Mint with .999 fine silver and advanced security features.",
     url: SITE_CONFIG.domain,
     publisher: {
       "@type": "Organization",
@@ -64,12 +64,12 @@ export default async function HomePage() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Silver Bullion Coin",
+    name: "British Silver Britannia Coin",
     description:
-      "One troy ounce silver bullion coin, .999 fine purity, government-minted and recognized worldwide.",
+      "One troy ounce British Silver Britannia coin, .999 fine purity, minted by the Royal Mint with advanced security features.",
     brand: {
       "@type": "Brand",
-      name: "Government Mint",
+      name: "Royal Mint",
     },
     category: "Silver Coins",
     material: "Silver",
@@ -99,8 +99,9 @@ export default async function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/silver-american-eagle-hero.png')",
+              backgroundImage: "url('/british-britannia-silver-coins-hero.png')",
               backgroundPosition: "center center",
+              backgroundSize: "cover",
             }}
           />
           {/* Light overlay for readability */}
@@ -120,20 +121,20 @@ export default async function HomePage() {
           <div className="max-w-2xl">
             {/* Certificate line - typographic treatment */}
             <p className="text-[13px] text-slate-500 tracking-[0.2em] uppercase mb-6">
-              .999 Fine Silver&ensp;·&ensp;Government Minted&ensp;·&ensp;Worldwide Liquidity
+              .999 Fine Silver&ensp;·&ensp;Royal Mint&ensp;·&ensp;Advanced Security
             </p>
 
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 tracking-tight">
               <span className="accent-text">Silver</span>
               <br />
-              <span className="accent-text">Bullion Coins</span>
+              <span className="accent-text">Britannia</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-10 max-w-xl">
-              Government-minted silver coins with .999 fine purity. 
-              Trusted by investors worldwide for liquidity and value.
+              Government-minted by the Royal Mint with .999 fine silver. 
+              The iconic Britannia motif, industry-leading security features, and strong global liquidity.
             </p>
 
             {/* CTAs */}
@@ -173,25 +174,25 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              <span className="accent-text">Live Silver Coin Pricing</span>
+              <span className="accent-text">Live Britannia Pricing</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Current market data for 1 oz silver bullion coins.
+              Current market data for 1 oz British Silver Britannia coins.
             </p>
           </div>
           <LiveProductPriceCard />
         </div>
       </section>
 
-      {/* Why Silver Bullion Coins Section */}
+      {/* Why Silver Britannia Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              Why <span className="accent-text">Silver Bullion Coins</span>?
+              Why <span className="accent-text">Silver Britannia</span>?
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-              Government-minted silver coins offer .999 fine purity with full government backing and worldwide recognition.
+              The Royal Mint&apos;s flagship silver bullion coin combines .999 fine purity with industry-leading security technology and over 1,100 years of British minting heritage.
             </p>
           </div>
 
@@ -213,10 +214,10 @@ export default async function HomePage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-display font-semibold mb-4 text-slate-900">
-                .999 Fine Purity
+                Advanced Security
               </h3>
               <p className="text-slate-600 leading-relaxed">
-                Government-minted silver coins are struck from .999 fine silver, ensuring maximum silver content per coin with no base metal alloys.
+                The Silver Britannia features the Royal Mint&apos;s cutting-edge security technology: surface animation that shifts when tilted, micro-text visible under magnification, radial sunburst background pattern, and a latent trident/padlock image—making it one of the most secure silver coins available.
               </p>
             </div>
 
@@ -237,10 +238,10 @@ export default async function HomePage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-display font-semibold mb-4 text-slate-900">
-                Government Backed
+                Royal Mint Heritage
               </h3>
               <p className="text-slate-600 leading-relaxed">
-                Produced by sovereign mints with legal tender status. Weight and purity are guaranteed, ensuring worldwide dealer recognition and trust.
+                Produced by the Royal Mint—one of the world&apos;s oldest mints, founded c. 886 AD with over 1,100 years of continuous operation. Each coin carries £2 British legal tender status and the Royal Mint&apos;s guarantee of weight and purity.
               </p>
             </div>
 
@@ -264,25 +265,25 @@ export default async function HomePage() {
                 IRA Eligible
               </h3>
               <p className="text-slate-600 leading-relaxed">
-                Many silver coins qualify for Precious Metals IRAs under IRS rules. The .999 purity exceeds the .999 fineness minimum required for tax-advantaged retirement accounts.
+                Silver Britannias qualify for Precious Metals IRAs under IRS regulations. The .999 fine purity exceeds the IRS minimum requirement, and government-minted status makes them approved assets for tax-advantaged retirement accounts.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who Buys Silver Coins Section */}
+      {/* Who Buys Silver Britannia Section */}
       <section className="py-16 md:py-24 relative overflow-hidden section-dark">
         <div className="absolute inset-0 accent-bar-pattern opacity-50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Who Buys <span className="accent-text">Silver Bullion Coins</span>?
+                Who Buys <span className="accent-text">Silver Britannias</span>?
               </h2>
               <p className="text-lg md:text-xl text-slate-600 mb-8">
-                Silver bullion coins appeal to investors who prioritize 
-                purity, government backing, and strong liquidity.
+                Silver Britannia coins appeal to investors who value 
+                Royal Mint quality, industry-leading security technology, and strong global liquidity for easy buying and selling.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -291,12 +292,12 @@ export default async function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                      Value-Focused Investors
+                      Security-Conscious Investors
                     </h3>
                     <p className="text-slate-600">
-                      Investors seeking affordable precious metals exposure choose silver 
-                      for its lower entry point compared to gold. Each coin contains exactly 
-                      one troy ounce of .999 fine silver.
+                      Investors who prioritize anti-counterfeiting protection choose Britannias 
+                      for their industry-leading security features including micro-text, 
+                      surface animation, and radial lines.
                     </p>
                   </div>
                 </div>
@@ -309,8 +310,8 @@ export default async function HomePage() {
                       IRA Investors
                     </h3>
                     <p className="text-slate-600">
-                      Those building Precious Metals IRAs value government-minted coins for their 
-                      IRS-approved status, government guarantee, and strong 
+                      Those building Precious Metals IRAs value Britannias for their 
+                      IRS-approved status, Royal Mint guarantee, and strong 
                       secondary market for eventual distributions.
                     </p>
                   </div>
@@ -324,8 +325,9 @@ export default async function HomePage() {
                       Collectors & Investors
                     </h3>
                     <p className="text-slate-600">
-                      Iconic coin designs from government mints appeal to collectors 
-                      and bullion investors alike, combining artistry with intrinsic value.
+                      The iconic Britannia motif—depicting Britain&apos;s female personification with 
+                      trident, shield, and Corinthian helmet—appeals to collectors and bullion 
+                      investors alike, combining classical artistry with investment value.
                     </p>
                   </div>
                 </div>
@@ -346,7 +348,7 @@ export default async function HomePage() {
               Comparing <span className="accent-text">Silver Bullion Coins</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-              Understanding how different silver bullion coins compare 
+              Understanding how the Silver Britannia compares to other major coins 
               helps you make informed investment decisions.
             </p>
           </div>
@@ -359,13 +361,13 @@ export default async function HomePage() {
                     Feature
                   </th>
                   <th className="text-center py-4 px-6 text-slate-800 font-display font-semibold">
+                    Britannia
+                  </th>
+                  <th className="text-center py-4 px-6 text-slate-500 font-display">
                     Silver Eagle
                   </th>
                   <th className="text-center py-4 px-6 text-slate-500 font-display">
                     Maple Leaf
-                  </th>
-                  <th className="text-center py-4 px-6 text-slate-500 font-display">
-                    Britannia
                   </th>
                 </tr>
               </thead>
@@ -375,22 +377,22 @@ export default async function HomePage() {
                   <td className="py-4 px-6 text-center text-emerald-600 font-medium">
                     .999
                   </td>
-                  <td className="py-4 px-6 text-center">.9999</td>
                   <td className="py-4 px-6 text-center">.999</td>
+                  <td className="py-4 px-6 text-center">.9999</td>
                 </tr>
                 <tr className="border-b border-slate-200">
                   <td className="py-4 px-6 font-medium">Issuing Mint</td>
                   <td className="py-4 px-6 text-center text-slate-800 font-medium">
-                    U.S. Mint
+                    Royal Mint
                   </td>
+                  <td className="py-4 px-6 text-center">U.S. Mint</td>
                   <td className="py-4 px-6 text-center">Royal Canadian</td>
-                  <td className="py-4 px-6 text-center">Royal Mint</td>
                 </tr>
                 <tr className="border-b border-slate-200">
                   <td className="py-4 px-6 font-medium">Face Value</td>
-                  <td className="py-4 px-6 text-center text-slate-800 font-medium">$1 USD</td>
+                  <td className="py-4 px-6 text-center text-slate-800 font-medium">£2 GBP</td>
+                  <td className="py-4 px-6 text-center">$1 USD</td>
                   <td className="py-4 px-6 text-center">$5 CAD</td>
-                  <td className="py-4 px-6 text-center">£2 GBP</td>
                 </tr>
                 <tr className="border-b border-slate-200">
                   <td className="py-4 px-6 font-medium">IRA Eligible</td>
@@ -399,18 +401,18 @@ export default async function HomePage() {
                   <td className="py-4 px-6 text-center text-emerald-600">Yes</td>
                 </tr>
                 <tr className="border-b border-slate-200">
-                  <td className="py-4 px-6 font-medium">Typical Premium</td>
-                  <td className="py-4 px-6 text-center text-slate-800 font-medium">3-6%</td>
-                  <td className="py-4 px-6 text-center">2-5%</td>
-                  <td className="py-4 px-6 text-center">2-5%</td>
+                  <td className="py-4 px-6 font-medium">Security Features</td>
+                  <td className="py-4 px-6 text-center text-slate-800 font-medium">Advanced</td>
+                  <td className="py-4 px-6 text-center">Standard</td>
+                  <td className="py-4 px-6 text-center">Advanced</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-6 font-medium">Best For</td>
                   <td className="py-4 px-6 text-center text-slate-800 font-medium">
-                    U.S. Legal Tender
+                    Security Features
                   </td>
+                  <td className="py-4 px-6 text-center">U.S. Legal Tender</td>
                   <td className="py-4 px-6 text-center">Highest Purity</td>
-                  <td className="py-4 px-6 text-center">Security Features</td>
                 </tr>
               </tbody>
             </table>
@@ -426,41 +428,41 @@ export default async function HomePage() {
               Iconic <span className="accent-text">Design & Heritage</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-              Silver bullion coins feature some of the most celebrated 
-              coin designs from mints around the world.
+              The Silver Britannia features one of the most celebrated 
+              coin designs in the world, with the Britannia motif rooted in over 2,000 years of British history.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="card">
               <h3 className="text-xl font-display font-semibold text-slate-900 mb-4">
-                Obverse: Iconic Imagery
+                Obverse: The Monarch
               </h3>
               <p className="text-slate-600 mb-4">
-                Government-minted silver coins feature distinctive obverse designs, 
-                from Walking Liberty to national symbols, each representing 
-                the heritage and values of their issuing nation.
+                The obverse features a portrait of the reigning British monarch. Current issues 
+                display King Charles III (from 2023), continuing the long tradition that 
+                previously featured Queen Elizabeth II (1997-2022).
               </p>
               <p className="text-slate-500 text-sm">
-                <strong className="text-slate-700">Historical Note:</strong> Many designs 
-                have been celebrated for decades, becoming instantly recognizable 
-                symbols of quality and authenticity.
+                <strong className="text-slate-700">Historical Note:</strong> The monarch portrait 
+                tradition ensures continuity and authenticity, with each reign represented 
+                on British coinage.
               </p>
             </div>
 
             <div className="card">
               <h3 className="text-xl font-display font-semibold text-slate-900 mb-4">
-                Reverse: National Symbols
+                Reverse: The Britannia Motif
               </h3>
               <p className="text-slate-600 mb-4">
-                Reverse designs typically feature national emblems, wildlife, or 
-                symbolic imagery that connects the coin to its country of origin 
-                and reinforces its authenticity.
+                The reverse showcases the iconic figure of Britannia—the female 
+                personification of Britain—depicted with her traditional symbols: a trident 
+                representing naval power, a shield bearing the Union Flag, and a Corinthian helmet.
               </p>
               <p className="text-slate-500 text-sm">
-                <strong className="text-slate-700">Global Recognition:</strong> These 
-                designs are recognized by dealers and investors worldwide, 
-                supporting strong liquidity in secondary markets.
+                <strong className="text-slate-700">Designer:</strong> The modern Britannia 
+                design was created by Philip Nathan and has been refined over the years 
+                while maintaining its classical elegance and powerful symbolism.
               </p>
             </div>
           </div>
@@ -480,7 +482,7 @@ export default async function HomePage() {
           <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
             View{" "}
             <Link href="/live-silver-prices" className="text-slate-700 hover:underline font-medium">
-              current pricing
+              current Britannia pricing
             </Link>
             {" "}or browse the{" "}
             <Link href="/resources" className="text-slate-700 hover:underline font-medium">
@@ -490,7 +492,7 @@ export default async function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/live-silver-prices" className="btn-primary">
-              View Current Silver Prices
+              View Current Britannia Prices
             </Link>
             <Link href="/resources" className="btn-secondary">
               Explore Educational Library

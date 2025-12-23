@@ -1,10 +1,10 @@
-# Silver Coins Master
+# British Silver Britannia Coins
 
-A Next.js template for silver bullion coin educational websites.
+A Next.js educational website about British Silver Britannia coins from the Royal Mint.
 
 ## Overview
 
-This is a reusable template for creating educational sites about silver bullion coins. It includes:
+This site provides educational information about Silver Britannia coins. It includes:
 
 - Live silver pricing via Monex API
 - Educational resources about silver coins
@@ -22,8 +22,8 @@ This is a reusable template for creating educational sites about silver bullion 
 
 All site-specific configuration is centralized in `src/lib/siteConfig.ts`:
 
-- `productSymbol`: Monex product code (e.g., "SAEV" for Silver American Eagle)
-- `spotSymbol`: Spot price symbol (e.g., "SBSPOT")
+- `productSymbol`: Monex product code (e.g., "BSB" for Silver Britannia)
+- `spotSymbol`: Spot price symbol (e.g., "SBSPOT" for silver spot)
 - `brandName`: Site display name
 - `domain`: Canonical domain
 

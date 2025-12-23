@@ -17,8 +17,8 @@ export default function Footer() {
             </Link>
             <p className="text-slate-300 text-sm leading-relaxed">
               Your trusted educational resource for {SITE_CONFIG.primaryProduct}. 
-              Helping investors understand government-minted silver coins with 
-              .999 fine purity and strong liquidity.
+              Helping investors understand Royal Mint silver coins with 
+              .999 fine purity and advanced security features.
             </p>
           </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
                   href="/live-silver-prices"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Silver Prices
+                  Britannia Prices
                 </Link>
               </li>
               <li>
@@ -78,7 +78,7 @@ export default function Footer() {
                   href="/where-to-buy"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Where to Buy Silver Coins
+                  Where to Buy Britannias
                 </Link>
               </li>
               <li>
